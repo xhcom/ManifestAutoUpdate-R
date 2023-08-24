@@ -166,7 +166,7 @@ def app(app_path):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-r', '--repo', default='wxy1343/ManifestAutoUpdate')
+parser.add_argument('-r', '--repo', default='Laoleshu/ManifestAutoUpdate-R')
 parser.add_argument('-a', '--app-id')
 parser.add_argument('-p', '--app-path')
 args = parser.parse_args()
@@ -176,7 +176,7 @@ if __name__ == '__main__':
         if args.app_path:
             app(args.app_path)
         else:
-            main(args.app_id or input('appid: '))
+            main(args.app_id or input('(Laoleshu修复)appid: '))
     except KeyboardInterrupt:
         exit()
     except:
